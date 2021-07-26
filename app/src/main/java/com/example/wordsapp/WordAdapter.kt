@@ -87,7 +87,7 @@ class WordAdapter(private val letterId: String, context: Context) :
         holder.button.setOnClickListener {
             //URI: uniform resource identifier (general)- URL: ...Locator
             //another form of URIs is URN (... Name) like tel:+1-555-867-5309
-            val queryUrl: Uri = Uri.parse("${DetailActivity.SEARCH_PREFIX}${item}")
+            val queryUrl: Uri = Uri.parse("${WordListFragment.SEARCH_PREFIX}${item}")
 
             val intent = Intent(Intent.ACTION_VIEW, queryUrl)
 
